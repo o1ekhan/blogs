@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blogging Platform</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <h1>Simple Blogging Platform</h1>
+    
+    <!-- Form for creating a new blog post -->
+    <div id="postForm">
+        <input type="hidden" id="postId">
+        <input type="text" id="title" placeholder="Title" required>
+        <input type="text" id="author" placeholder="Author" required>
+        <textarea id="body" placeholder="Body" required></textarea>
+        <button onclick="submitPost()">Submit</button>
+    </div>
+    
+    <!-- Section to display blog posts -->
+    <div id="postsContainer"></div>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
